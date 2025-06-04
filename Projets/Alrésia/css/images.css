@@ -1,0 +1,19 @@
+#imgacc {
+    height:400px;
+    width:600px;
+}
+#avatar {
+    float:left;
+    margin-top:-2cm;
+    margin-left:2cm;
+    height:150px;
+    width:150px; 
+}
+#logo {
+ visibility: visible;
+ float: right;
+ margin-top:5px;
+ height: 50px;
+ width: 80px;
+ position: relative;
+}

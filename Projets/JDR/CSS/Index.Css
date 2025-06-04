@@ -1,0 +1,17 @@
+#Body{
+    background-image:url("../Images/Ciel.jpeg") ;
+    background-size: 100%;
+}
+#Title{
+    color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #e2e2e2, 3px 3px 0 #cfcfcf;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Footer{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

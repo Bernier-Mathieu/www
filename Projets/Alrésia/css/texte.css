@@ -1,0 +1,39 @@
+#accueil {
+    text-align:center;
+    margin-top:3cm;
+}
+#txtaccueil{
+    font-size:2cm;
+}
+#txtaccueilexpli{
+    font-size:1cm;
+}
+#name {
+    text-align:center;
+    font-size:100px;
+}
+#des {
+    text-align:left;
+    font-size:50px;
+}
+#erreur {
+    color:#FF0000;
+}
+#blanc {
+    color:#FFFFFF;
+}
+#center {
+    text-align:center;
+}
+#left {
+    text-align:left;
+}
+#titre {
+    text-align:center;
+    text-decoration: underline;
+    font-size:100px;
+}
+#texte {
+    text-align:center;
+    font-size:50;
+}

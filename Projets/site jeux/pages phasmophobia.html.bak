@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <body style="    background-color:#525252">
+    <p style="height: 15px;"> <u><b>Vous êtes maintenant sur la
+          page de phasmophobia</b></u></p>
+    <p style="height: 15px;"><u><b><br>
+        </b></u></p>
+    <p> <a href="liste%20des%20cartes.html" style="color: black;">cartes</a></p>
+    <p><a href="Livre" style="color: #000100;">Livres</a> </p>
+  </body>
+</html>

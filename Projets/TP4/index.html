@@ -1,0 +1,35 @@
+<html class="100">
+    <head>
+        <title>Chat SIO</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    </head>
+    <body class="h-100">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-1 col-sm-3 border border-dark" >  
+                    Utilisateurs
+                    <ul id="utilisateurs"></ul>
+                  </div>
+                <div id="border" class="col-11 col-sm-9 border border-dark" >
+                  Messages
+                  <ul id="messages"></ul>
+                  </div>
+            </div>
+              <div class="row form-group"> 
+                <form id="form" action="">
+                  <div class="col-10 border border-dark">
+                    <input id="input" class="form-control-sm w-100" autocompete="off"/>
+                  </div>
+                  <div class="col-2 border border-dark">
+                    <button id="button" class="w-100 h-100">Envoyer</button>
+                  </div>
+                </form>
+            </div>
+          </div>          
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/client"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+#footer{
+    background-color: rgb(0, 200, 226);
+    width: 100%;
+}
+#barreinfo {
+    text-align: center;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue
+}
+#arborescence {
+    text-align: center;
+}
+#informations {
+    color: black;
+    text-align: right;
+    margin-right: 1%;
+}
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2em;
+  }
+  body {
+    position: relative;    /* pour servir de référent */
+    padding-bottom: 3em;   /* hauteur du footer par exemple */
+  }
+a {
+    color: black;
+}
+#vignettes{
+    height: 3%;
+    width: 3%; 
+}

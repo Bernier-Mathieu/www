@@ -1,0 +1,27 @@
+#Body{
+    background-color: blueviolet;
+}
+#Title{
+    color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #e2e2e2, 3px 3px 0 #cfcfcf;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Footer{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Row {
+    text-align: center;
+}
+#img{
+    height: 300px;
+    width: 300px;
+}
+#Perso {
+    margin-bottom: 1cm;
+    text-decoration:none
+}

@@ -1,0 +1,27 @@
+#imgacc {
+    height:19%;
+    width:17%;
+    float: left;
+    padding-right: 1%;
+}
+#imgacc2 {
+    margin-top:0.1%;
+    height:18%;
+    width:17%;
+    float: right;
+    padding-left: 1%;
+}
+#txtaccueil {
+    color: rgb(0, 0, 0);
+    font-size:125%;
+}
+#txtred {
+    text-align: center;
+    font-size:125%;
+    color: red;
+}
+#center {
+    margin-left:35%;
+}
+
+

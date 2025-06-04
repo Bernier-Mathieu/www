@@ -1,0 +1,26 @@
+html, body, div{
+	margin : 0px;
+	padding: 0px;
+}
+
+body {
+	font-family:Verdana, Arial;
+	font-size:14px;
+	background;#f9f9f9
+}
+
+header {
+	background-color:111;
+	height:150px;
+	top:0px;
+}
+
+#banniere {
+	width:950px;
+	margin:auto;
+}
+
+#banniere {
+	text-align:center;
+	margin:0px;
+	padding:20px 0 0 0;
