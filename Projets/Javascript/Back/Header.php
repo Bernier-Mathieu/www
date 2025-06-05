@@ -1,6 +1,6 @@
 <div class="container-fluid" id="header">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000; height:40px;">
-    <a class="navbar-brand text-danger " href="#">IncroyJeux</a>
+    <a class="navbar-brand text-danger " href="Index.php">IncroyJeux</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
