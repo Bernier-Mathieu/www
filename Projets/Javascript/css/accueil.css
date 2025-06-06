@@ -13,3 +13,6 @@ body {
 .card:hover {
   transform: scale(1.5);
 }
+#erreur{
+  color: red;
+}

@@ -5,7 +5,7 @@
     <title>Memory</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
   </head>
-  <body>     
+  <body>    
         <canvas id="app"></canvas>
         <script src="app.js"></script>
   </body>

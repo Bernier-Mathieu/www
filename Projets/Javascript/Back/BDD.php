@@ -1,0 +1,1 @@
+$bdd = $db  = new PDO('mysql:host=localhost;dbname=incroyjeux;charset=utf8', 'root', '');
