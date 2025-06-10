@@ -6,7 +6,7 @@
   <title>Connexion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/accueil.css"> <!-- pour garder ton style -->
+  <link rel="stylesheet" href="css/accueil.css">
 </head>
     <header>
         <?php include ('Back/header.php'); ?>
