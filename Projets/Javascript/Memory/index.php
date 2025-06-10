@@ -11,5 +11,8 @@
         <game id="game"><canvas id="app"></canvas></game>
         <script src="app.js"></script>
         <script src="../Back/other.js"></script>
+        <script>
+        const userSession = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'invité'; ?>";
+        </script>
   </body>
 </html>

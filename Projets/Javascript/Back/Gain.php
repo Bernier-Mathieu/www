@@ -1,53 +1,25 @@
 <?php
-
 session_start();
 
-$bdd = $db = new PDO('mysql:host=localhost;dbname=incroyjeux;charset=utf8', 'root', '');
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=incroyjeux;charset=utf8', 'root', '');
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    if (!isset($_POST['score'], $_POST['user'], $_POST['Game'])) {
+        http_response_code(400);
+        echo "Paramètres manquants.";
+        exit;
+    }
 
-if (isset($_POST['Connect'])) {
-   // Traitement de connexion
-   if (isset($_POST['username'])) {
+    $score = (int) $_POST['score'];
+    $user  = $_POST['user'];
+    $game  = (int) $_POST['Game'];
 
-      $password = $_POST['password'];
-      if (!empty($username) and !empty($password)) {
-         $requser = $bdd->prepare("SELECT * FROM users WHERE Name = ?");
-         $requser->execute(array($username));
-         $userexist = $requser->rowCount();
-         if ($userexist == 1) {
-            $userinfo = $requser->fetch();
-            if ($userinfo && password_verify($password, $userinfo['Password'])) {
-                  $_SESSION['username'] = $userinfo['Name'];
-                  $_SESSION['id'] = $userinfo['User_Id'];
-                  $_SESSION['erreur'] = NULL;
-                  header("Location: ../index.php");
-                  exit();
-            }
-         } else {
-            $_SESSION['erreur'] = "mdpuser";
-            header("Location: ../connect.php");
-         }
-      }
-   }
-} elseif (isset($_POST['Inscrire'])) {
-   // Redirection vers une page d'inscription ou autre action
-   if (isset($_POST['username'])) {
-      $username = $_POST['username'];
-      $password = $_POST['password'];
-      $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-      $requser = $db->prepare("SELECT * FROM users WHERE Name = ?");
-      $requser->execute(array($username));
-      $userexist = $requser->rowCount();
-      if ($userexist == 1) {
-         $_SESSION['erreur'] = "deja";
-         header("Location: ../connect.php");
-      } else {
-         $sql = 'INSERT INTO Users(Name, Password) VALUES (?, ?)';
-         $change = $bdd->prepare($sql);
-         $change->execute([$username, $passwordHash]);
-         $_SESSION['erreur'] = "connect";
+    $stmt = $bdd->prepare("CALL Insert_Score(?, ?, ?)");
+    $stmt->execute([$score, $user, $game]);
 
-         header("Location: ../connect.php");
-      }
-   }
+    echo "Score enregistré avec succès.";
+} catch (PDOException $e) {
+    http_response_code(500);
+    echo "Erreur serveur : " . $e->getMessage();
 }
