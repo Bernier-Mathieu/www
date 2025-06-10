@@ -321,7 +321,7 @@
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="img/geekzone.png" class="card-img-top" alt="...">
+                            <img src="img/incroyjeux.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Jeu et Pwa Javascript</h5>
                                 <p class="card-text">Projet en javascript en suivant un livre de cours puis tranformer en pwa utilisable sur mobile (en cours)</p>
