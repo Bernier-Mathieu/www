@@ -206,12 +206,23 @@ function drawPopup() {
     app.context.drawImage(img, 0, 106, 142, 106, x, y, 142, 106);
   } else if (app.cards.length === app.idCardsFound.length) {
     app.context.drawImage(img, 0, 0, 142, 106, x, y, 142, 106);
-    fetch("../Back/Gain.php", {
-      method: "POST",
+    const data = {
+      pseudo: userSession,
+      score: app.score,
+      Game: 1
+    }
+    fetch('../Back/Gain.php', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        'Content-Type': 'application/json'
       },
-      body: "score=" + encodeURIComponent(app.score) + "&user=" + encodeURIComponent(userSession) + "&Game=" + encodeURIComponent(1),
-    });
+      body: JSON.stringify(data)
+    })
+      .then(res => res.text())
+      .then(data => console.log("✅ Réponse du serveur :", data))
+      .catch(error => {
+        console.error("❌ Erreur :", error);
+        alert("Erreur lors de l'envoi !");
+      });
   }
 }

@@ -1,3 +1,7 @@
+<?php
+// On demarre la session AVANT d'ecrire du code HTML
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
