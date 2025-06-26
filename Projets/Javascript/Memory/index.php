@@ -13,7 +13,7 @@ session_start();
   <body>    
         <button onclick="popup()" class="btn btn-danger" id="Return">Retour au choix des jeux</button>
         <game id="game"><canvas id="app"></canvas></game>
-        <script src="app.js"></script>
+        <script type="module" src="Back/app.js"></script>
         <script src="../Back/other.js"></script>
         <script>
         const userSession = "<?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'invité'; ?>";
