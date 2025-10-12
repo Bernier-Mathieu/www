@@ -18,7 +18,7 @@
                     <a href="./Pages/DualDx.php"><img src="./Images/DualDx.png" id="carousel-image-0" class="carousel-image mv0to5"></a>
                     <a href="./Pages/D&D.php"><img src="./Images/D&D.png" id="carousel-image-1" class="carousel-image mv1to0"></a>
                     <a href="./Pages/Alresia.php"><img src="./Images/Alresia.png" id="carousel-image-2" class="carousel-image mv2to1"></a>
-                    <a href="./Pages/MHA.php"><img src="./Images/MHA.png" id="carousel-image-3" class="carousel-image mv3to2"></a>
+                    <a href="./MHA/Pages/MHA.php"><img src="./Images/MHA.png" id="carousel-image-3" class="carousel-image mv3to2"></a>
                     <a href="./Pages/Cthulu.php"><img src="./Images/Cthulu.png" id="carousel-image-4" class="carousel-image mv4to3"></a>
                     <a href="./Pages/Warhammer.php"><img src="./Images/Warhammer.png" id="carousel-image-5" class="carousel-image mv5to4"></a>
                     <div class="right-arrow">❯</div>

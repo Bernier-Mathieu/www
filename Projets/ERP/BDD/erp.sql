@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 DROP TABLE IF EXISTS `module`;
-CREATE TABLE IF NOT EXISTS `module` (
+CREATE TABLE IF NOT EXISTS `modules` (
   `Id_Module` int NOT NULL AUTO_INCREMENT,
   `Nom_Module` varchar(50) NOT NULL,
   `Actif` tinyint(1) NOT NULL,
